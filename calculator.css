@@ -1,0 +1,189 @@
+body{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+ font-size: 25px;
+ font-family: 'Montserrat', sans-serif;
+}
+
+
+
+#calc-container{
+ margin: 0 auto;
+ width: 250px;
+ background-color: #ffffff;
+ height: 500px;
+ border-radius: 25px;
+ margin-top: 35px;
+ margin-bottom: 35px;
+ box-shadow:1px 1px 4px 4px rgb(196, 193, 193);
+}
+
+#calc-buttons{
+
+ width: 100%;
+ height: 255px;
+ display: flex;
+flex-wrap: wrap;
+text-align: center;
+justify-content: center;
+}
+
+
+#calc-screen{
+
+ width: 100%;
+ height: 200px;
+	margin-bottom: 20px;
+	
+}
+
+.buttons{
+ 
+ border-radius: 50%;
+ height: 40px;
+ 
+width: 40px;
+line-height: 40px;
+margin: 6px;
+color: #555a60;
+font-weight: 500;
+font-size: 20px;
+}
+
+#equal-sign{
+ width: 90px;
+ height: 40px;
+ border-radius: 30px;
+ line-height: 40px;
+ background-color: #e3e9ec;
+ margin: 5px 0px;
+	color: #f4ab41;
+ font-weight: 500;
+}
+
+.sign{
+ background-color: #e3e9ec;
+ border-radius: 50%;
+ height: 40px;
+ color: #f4ab41;
+ font-weight: 500;
+}
+
+#ac{
+ color: #f4ab41;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.switch {
+ position:relative;
+ display:block;
+ width: 25px;
+ height:50px;
+left: 20px;
+top: 20px;
+}
+
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0; left: 00; right:0; bottom: 0;
+ background: #f4ab41;
+ transition: .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.1)
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+left: 2px;
+bottom: 2px;
+ top:27px;
+ background-color: #555A60;
+ transition: .5s;
+
+}
+
+.switch input { display: none; }
+
+input:checked + .slider {
+ background-color: black;
+}
+
+input:checked + .slider:before {
+ transform: translateY(-25px) ;
+ background-color: #f4ab41
+}
+
+.slider.round {
+ border-radius: 35px;
+
+
+}
+
+.slider.round:before {
+ width: 21px;
+ height: 21px;
+border-radius: 50%;
+z-index: 1;
+}
+
+span{
+ font-size: 15px;
+}
+
+#moon{
+position: relative;
+top: 10px;
+left: 6px;
+color: #f4ab41;
+
+
+}
+
+#sun{
+ position: relative;
+ left: 5px;
+ top: 3px;
+ color: #555A60;
+}
+
+
+#calc-history{
+text-align: right;
+position: relative;
+bottom: 40px;
+padding-left: 32px;
+padding-right:10px;
+font-size: 25px;
+width: 70%;
+height: 25px;
+color: #f4ab41;
+font-weight: 300;
+overflow: hidden;
+
+}
+
+#calc-result{
+
+	text-align: right;
+	position: relative;
+	top: 10px;
+	padding-left: 32px;
+	padding-right:10px;
+	font-size: 60px;
+	width: 70%;
+	height: 60px;
+	color: #f4ab41;
+	font-weight: 500;
+	overflow: hidden;
+}
